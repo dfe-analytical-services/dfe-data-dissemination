@@ -1,4 +1,76 @@
-//Dashboard tiles
+//UPDATED Dashboard tiles
+
+.dfe-dash-tiles {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dfe-dash-tiles--simple {
+  padding-top: 2rem;
+  border-top: 1px solid $govuk-border-colour;
+  margin-top: 2rem;
+
+  .dfe-dash-tiles__tile {
+    @include govuk-media-query($until: tablet) {
+      flex-basis: 100%;
+    }
+
+    flex-basis: 46%;
+    margin: 2% 2% 4% 2%;
+  }
+}
+
+.dfe-dash-tiles__tile {
+  background: govuk-colour("grey-4");
+  border-top: 1px solid $govuk-border-colour;
+  box-sizing: border-box;
+  flex-basis: 23%;
+  margin: 2% 1% 1%;
+  padding: 20px;
+  position: relative;
+
+  .govuk-tag {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 0;
+    background: none;
+    color: #6f777b;
+    font-weight: normal;
+    padding-left: 0;
+  }
+
+  strong {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: black;
+  }
+
+  .decrease:after,
+  .increase:after,
+  .level:after {
+    display: inline-block;
+    padding-right: 0.1em;
+    color: #bfc1c3;
+  }
+
+  .decrease:after {
+    content: "\25BC";
+  }
+
+  .increase:after {
+    content: "\25B2";
+  }
+
+  .level:after {
+    content: "\25CF";
+    color: #bfc1c3;
+    margin-right: 5px;
+    margin-left: 2px;
+  }
+}
+
+//OLD Dashboard tiles
 
 .dash-tiles {
   display: flex;
@@ -15,6 +87,10 @@
     margin: 2% 1% 1%;
     padding: 20px;
     position: relative;
+
+    @include govuk-media-query($until: tablet) {
+      border: 1px solid red;
+    }
 
     &.latest {
       background-color: rgba(#005ea5, 0.15);
