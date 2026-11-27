@@ -1,6 +1,7 @@
 # dfe-data-dissemination
 
-[![Build Status](https://dev.azure.com/dfe-data-dissemination/DfE%20Data%20Dissemination/_apis/build/status/Prototype%20Build)](https://dev.azure.com/dfe-data-dissemination/DfE%20Data%20Dissemination/_build/latest?definitionId=6)
+> [!WARNING]
+> This repository is archived and is no longer maintained. It is kept read-only for reference only.
 
 &nbsp;
 
